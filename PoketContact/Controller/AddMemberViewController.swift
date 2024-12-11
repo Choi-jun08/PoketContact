@@ -11,7 +11,7 @@ import CoreData
 final class AddMemberViewController: UIViewController {
     private let addMemberView: AddMemberView?
     private var oldName: String?
-    private let pokeDataManager = PokeDataManager()
+    private let pokeDataManager = PokeDataModel()
     
     init() {
         self.addMemberView = AddMemberView()

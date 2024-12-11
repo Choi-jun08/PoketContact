@@ -10,7 +10,7 @@ import UIKit
 final class MainTableViewCell: UITableViewCell {
     private let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.layer.borderWidth = 2
+        imageView.layer.borderWidth = 0.5
         imageView.layer.borderColor = UIColor.lightGray.cgColor
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true // 사진 안짤리게 해주는거
@@ -22,7 +22,7 @@ final class MainTableViewCell: UITableViewCell {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 15)
-        label.textColor = .gray
+        label.textColor = .black
         label.clipsToBounds = true
         return label
     }()
@@ -30,7 +30,7 @@ final class MainTableViewCell: UITableViewCell {
     private let phoneNumberLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 15)
-        label.textColor = .gray
+        label.textColor = .black
         label.textAlignment = .center
         return label
     }()

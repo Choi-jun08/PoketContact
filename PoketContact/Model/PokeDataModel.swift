@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 
-final class PokeDataManager {
+final class PokeDataModel {
     var pokemon: PokeResponse?
     private var container: NSPersistentContainer!
     
