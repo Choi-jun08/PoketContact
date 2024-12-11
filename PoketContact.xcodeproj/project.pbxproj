@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		237C2CA42D097DA700FE2457 /* PokeContactBook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C2CA32D097DA700FE2457 /* PokeContactBook+CoreDataProperties.swift */; };
+		237C2CA52D097DA700FE2457 /* PokeContactBook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237C2CA22D097DA700FE2457 /* PokeContactBook+CoreDataClass.swift */; };
+		237C2CA82D097E6C00FE2457 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 237C2CA72D097E6C00FE2457 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		237C2C5B2D097AFA00FE2457 /* PoketContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoketContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		237C2CA22D097DA700FE2457 /* PokeContactBook+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokeContactBook+CoreDataClass.swift"; sourceTree = "<group>"; };
+		237C2CA32D097DA700FE2457 /* PokeContactBook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokeContactBook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237C2CA82D097E6C00FE2457 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,8 @@
 		237C2C522D097AFA00FE2457 = {
 			isa = PBXGroup;
 			children = (
+				237C2CA22D097DA700FE2457 /* PokeContactBook+CoreDataClass.swift */,
+				237C2CA32D097DA700FE2457 /* PokeContactBook+CoreDataProperties.swift */,
 				237C2C5D2D097AFA00FE2457 /* PoketContact */,
 				237C2C5C2D097AFA00FE2457 /* Products */,
 			);
@@ -78,6 +89,7 @@
 			);
 			name = PoketContact;
 			packageProductDependencies = (
+				237C2CA72D097E6C00FE2457 /* SnapKit */,
 			);
 			productName = PoketContact;
 			productReference = 237C2C5B2D097AFA00FE2457 /* PoketContact.app */;
@@ -107,6 +119,9 @@
 			);
 			mainGroup = 237C2C522D097AFA00FE2457;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				237C2CA62D097E6C00FE2457 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 237C2C5C2D097AFA00FE2457 /* Products */;
 			projectDirPath = "";
@@ -132,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237C2CA42D097DA700FE2457 /* PokeContactBook+CoreDataProperties.swift in Sources */,
+				237C2CA52D097DA700FE2457 /* PokeContactBook+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +166,6 @@
 				INFOPLIST_FILE = PoketContact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +192,6 @@
 				INFOPLIST_FILE = PoketContact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		237C2CA62D097E6C00FE2457 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		237C2CA72D097E6C00FE2457 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237C2CA62D097E6C00FE2457 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 237C2C532D097AFA00FE2457 /* Project object */;
 }
